@@ -1,0 +1,5 @@
+# assign repo to devops team
+. @devops
+
+# assign JS to frontend team
+*.js @frontend
