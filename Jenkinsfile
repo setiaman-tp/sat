@@ -23,7 +23,10 @@ pipeline {
                 bat "mvn install -DskipTests"
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'development' of https://github.com/setiaman-tp/sat.git
     }
     post {
         always {
