@@ -23,7 +23,6 @@ pipeline {
                 bat "mvn install -DskipTests"
             }
         }
-    }
         stage("sonar") {
             steps {
                 script {
@@ -56,7 +55,9 @@ pipeline {
                     }
                 }
             }
-        }    
+        }  
+    }
+  
     post {
         always {
             echo "Pipeline completed"
