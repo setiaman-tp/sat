@@ -68,7 +68,8 @@ pipeline {
                     """
                 }
             }
-        }        
+        }
+                
         stage('Deploy to Tomcat') {
 			steps {
 				script {
@@ -87,7 +88,7 @@ pipeline {
 					bat """
 					curl -v -u ${tomcatUser}:${tomcatPassword} \
 					-T ${warFile} \
-					${tomcatUrl}/deploy?path=/Sat&redeploy=true
+					${tomcatUrl}/deploy?path=/Sat
 					"""
 				}
 			}
