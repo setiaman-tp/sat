@@ -56,6 +56,19 @@ pipeline {
                 }
             }
         }
+        stage('Undeploy from Tomcat') {
+            steps {
+                script {
+                    def tomcatUrl = 'http://localhost:8090/manager/text'
+                    def tomcatUser = 'tomcat'
+                    def tomcatPassword = 'password'
+                    bat """
+                    curl -v -u ${tomcatUser}:${tomcatPassword} \
+                    ${tomcatUrl}/undeploy?path=/Sat
+                    """
+                }
+            }
+        }        
         stage('Deploy to Tomcat') {
 			steps {
 				script {
