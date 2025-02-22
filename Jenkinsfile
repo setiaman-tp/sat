@@ -61,7 +61,8 @@ pipeline {
 				script {
 					// Find the WAR file
             		//def warFile = findFiles(glob: 'target/*.war')[0]
-            		def warFile = 'target\\SAT-0.0.1-SNAPSHOT.war'
+            		//def warFile = 'target\\SAT-0.0.1-SNAPSHOT.war'
+            		def warFile = 'target\\*.war'
             		//echo "Deploying WAR file: ${warFile.path}"
  
 					// Tomcat Manager URL and credentials
