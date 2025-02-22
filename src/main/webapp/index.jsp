@@ -44,7 +44,7 @@
     <div class="menu">
         <h1>Staff Payrol and Attendance Management</h1>
         <a href="./StaffServlet/dashboard">Staff Management</a>
-        <a href="outlet.html">Branch 2</a>
+        <a href="outlet.html">Branch V3</a>
     </div>
 </body>
 </html>
