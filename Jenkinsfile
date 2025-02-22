@@ -74,7 +74,7 @@ pipeline {
 					bat """
 					curl -v -u ${tomcatUser}:${tomcatPassword} \
 					-T ${warFile} \
-					${tomcatUrl}/deploy?path=/Sat&update=true
+					${tomcatUrl}/deploy?path=/Sat&redeploy=true
 					"""
 				}
 			}
